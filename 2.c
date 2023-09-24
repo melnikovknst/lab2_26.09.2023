@@ -19,7 +19,7 @@ void greatestDivisor(int n, int * array){
 
     for(int i = 0; i < n; i++)
         answer = evklid(answer, array[i]);
-    
+
     printf("%d\n",answer);
 }
 
@@ -32,6 +32,7 @@ int main(void){
     for(int i = 0; i < n; i++)
         scanf("%d", &array[i]);
     greatestDivisor(n, array);
+    free(array);
     
     return 0;
 }
