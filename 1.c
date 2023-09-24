@@ -18,6 +18,7 @@ int main(void) {
         scanf("%d", &array[i]);
         isSqr(array[i], &count);
     }
+    free(array);
     
     printf("%d\n", count);
     return 0;
