@@ -5,21 +5,21 @@
 int evklid(int a, int b){
     while (a != 0 && b != 0){
         if (a > b)
-            a = a % b;
+            a = a - b;
         else
-            b = b % a;
+            b = b - a;
     }
     
     return a + b;
 }
 
 
-void greatestDivisor(int n, int * array){
+void greatestDivisor(int n, int *array){
     int answer = array[0];
 
     for(int i = 0; i < n; i++)
         answer = evklid(answer, array[i]);
-
+    
     printf("%d\n",answer);
 }
 
