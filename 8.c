@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int isPrime(int num, int dum){
     if (num % dum == 0 && num != 2)
         return 0;
