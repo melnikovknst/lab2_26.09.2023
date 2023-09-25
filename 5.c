@@ -31,5 +31,6 @@ int main(void){
         scanf("%d", &coordinates[i]);
     
     printf("%f\n", square(coordinates, vertexes));
+    free(coordinates);
     return 0;
 }
